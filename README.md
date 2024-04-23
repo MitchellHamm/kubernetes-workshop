@@ -22,3 +22,9 @@ Or install from binary:
    sudo chown root: /usr/local/bin/kubectl
    ```
 Verify the cli is installed by running `kubectl get pods -A` 
+
+<br/>
+
+## Starting the workshop
+Basic configs are provided in the starter folder if you want a jumping off point. Or if you prefer you can try making the manifests from scratch!
+There is a provided Dockerfile built and pushed to Dockerhub you can use which just logs and echoes back the path you send to the server. The image is `mitchhamm/kubernetes-workshop:1.0.0`
