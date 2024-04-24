@@ -28,3 +28,9 @@ Verify the cli is installed by running `kubectl get pods -A`
 ## Starting the workshop
 Basic configs are provided in the starter folder if you want a jumping off point. Or if you prefer you can try making the manifests from scratch!
 There is a provided Dockerfile built and pushed to Dockerhub you can use which just logs and echoes back the path you send to the server. The image is `mitchhamm/kubernetes-workshop:1.0.0`
+
+## Outcomes
+Upon creating the resources correctly, visiting localhost:<service-port> should give you a hello world prompt followed by the path you specified. 
+
+## Next Steps
+If you've got the application running locally on kubernetes successfully, try increasing the replica count on the deployment to spin up more pods. From here you can grab logs from each of the pods to see that the requests are actually being routed to different pods each time to spread the load across the pods
